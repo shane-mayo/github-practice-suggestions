@@ -3,8 +3,10 @@ package practice.java;
 import java.util.Scanner;
 
 /**
- * Computes pi to the Nth digit provided by the user. Then outputs the
- * solution.
+ * Computes PI using the Leibniz formula, then outputs the computed PI value, as well as the Math.PI value. 
+ * 
+ * It should be noted that the Leibniz formula will not be exact, as it would take far too many iterations
+ * to be an exact match up to the Math.PI value.
  * @author Shane
  */
 
@@ -13,28 +15,13 @@ public class Pi {
 	public Pi() {
 //		getUserInput();
 //		System.out.printf("%.15f", Math.PI);
-		leibnizFormula(1000000000);
-	}
-	
-	/**
-	 * 
-	 */
-	private void getUserInput() {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Please enter a number between 1 and 40");
-		int userInput = scanner.nextInt();
-//		getAnswer(userInput);
-		
-		scanner.close();
+		leibnizFormula(100_000_000L);
 	}
 	
 	private void caculatePiToNth() {
 		
 	}
-	
-	private void getAnswer(int userInput) {
-	}
-	
+
 	private void leibnizFormula(double userInput) {
 		// gives the result of pi/4. result must be multipled by 4
 		// formula = summation of (-1)^n/(2n + 1) where n=0 to infinity
@@ -45,6 +32,10 @@ public class Pi {
 			count++;
 		}
 		double pi = sum * 4;
-		System.out.printf("%.15f%n%.15f", pi, Math.PI);
+		System.out.printf("Leibniz Computation:\t%.15f%nMath.PI Actual:\t\t%.15f", pi, Math.PI);
+	}
+	
+	public static void main(String[] args) {
+		new Pi();
 	}
 }
