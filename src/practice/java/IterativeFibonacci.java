@@ -1,20 +1,22 @@
 package practice.java;
 
 /**
+ * 
+ * @author Shane Mayo
+ * Data: 8-11-2020
+ * 
  * An iterative version of the Fibonacci sequence. The program asks for input from the user within a range of 1 to 40,
  * then prints out number of the Fibonacci sequence up to the number the user entered. The iterative approach is 
  * much faster compared to the unoptimized recursive version, allowing for a larger amount of values to be computed.
  * However, I kept the input range the same between the two in an attempt to allow comparison in speed between the two.
  * 
- * @author Shane Mayo
- *
  */
 
 public class IterativeFibonacci {
 	
 	public IterativeFibonacci() {
-		
-		long userInput = Input.getUserInput();
+		FibonacciInput input = new FibonacciInput();
+		long userInput = input.getUserInput();
 		long fibOne = 0;
 		long fibTwo = 1;
 		

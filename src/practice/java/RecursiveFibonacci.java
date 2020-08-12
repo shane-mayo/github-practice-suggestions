@@ -13,15 +13,15 @@ package practice.java;
  * inputs, simply comment out the specified line. The program, when executed, will display the 
  * Fibonacci sequence up to the Nth digit in the console or terminal.
  * 
- * It should be noted that this program is not streamlined in anyway, making user input parameters necessary. Streamlining 
+ * It should be noted that this program is not optimized in any way, making user input parameters necessary. Optimization 
  * will be done in the future.
  */
 
 public class RecursiveFibonacci {
-
+	
 	public RecursiveFibonacci() {
-		
-		long userInput = Input.getUserInput();
+		FibonacciInput input = new FibonacciInput();
+		long userInput = input.getUserInput();
 		
 		for (int i = 0; i < userInput; i++) {
 			if (i % 10 == 0) {

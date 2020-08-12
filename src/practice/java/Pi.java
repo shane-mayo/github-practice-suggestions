@@ -1,20 +1,20 @@
 package practice.java;
 
-import java.util.Scanner;
-
 /**
+ * 
+ * @author Shane Mayo
+ * 
  * Computes PI using the Leibniz formula, then outputs the computed PI value, as well as the Math.PI value. 
  * 
  * It should be noted that the Leibniz formula will not be exact, as it would take far too many iterations
- * to be an exact match up to the Math.PI value.
- * @author Shane
+ * to be an exact match up to the Math.PI value. As is, the current number of iterations is set to 100 million.
+ * 
  */
 
 public class Pi {
 	
 	public Pi() {
-//		getUserInput();
-//		System.out.printf("%.15f", Math.PI);
+		
 		leibnizFormula(100_000_000L);
 	}
 	
