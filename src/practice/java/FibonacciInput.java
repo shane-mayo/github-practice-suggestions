@@ -14,6 +14,7 @@ import java.util.Scanner;
 
 public class FibonacciInput implements Input {
 
+	
 	public long getUserInput() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter value between 1 and 40: ");
