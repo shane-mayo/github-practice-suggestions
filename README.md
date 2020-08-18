@@ -9,4 +9,7 @@ Iterative Fibonacci to the Nth value
 8-14-2020:\
 Prime Factorization up to Nth value (user provided)
 
+8-18-2020:\
+Changed Prime Factoization to display the prime factors of the input value.
+
 The README will be updated as needed.
